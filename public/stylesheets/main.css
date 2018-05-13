@@ -1,0 +1,233 @@
+.welcome-message {
+  color: #5b5c60;
+  font-weight: bold;
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.flash.notice {
+  margin: 20px auto;
+  width: 500px;
+  text-align: center;
+  background-color: rgba(226,176,176,0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grey {
+  color: #555;
+}
+
+.nav-top-right {
+  float: right;
+  margin-top: 31px;
+  margin-right: 10px;
+}
+
+.nav-top-right .download.disabled {
+  visibility: hidden;
+}
+
+.download-type .title {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.download-type .claim-form {
+  margin-left: 2%;
+  display: inline-block;
+}
+
+.download-type .claim-form select {
+  display: none;
+  visibility: none;
+}
+
+.download-type .claim {
+  margin-left: 2%;
+  display: inline-block;
+}
+
+.download-type .details {
+  display: inline-block;
+}
+
+.claimable .claim {
+  margin-left: 2%;
+  color: #FD4A00;
+}
+
+.select-electorate a {
+  font-size: 2rem;
+  float: left;
+  clear: both;
+  margin-bottom: 5px;
+}
+
+.logo-link {
+  float: left;
+}
+
+.header {
+  overflow: hidden;
+}
+
+.electorates {
+  float: left;
+}
+
+.electorate-picker {
+  display: inline;
+  margin-left: 45px;
+  float: left;
+  margin-top: 31px;
+}
+
+.electorate-picker form {
+  display: inline;
+}
+
+.electorate-picker select {
+  min-width: 175px;
+}
+
+.main {
+  background-image: url('/images/background-home-image.jpg');
+  background-size: 100%;
+}
+
+.logo {
+  width: 100px;
+  margin: 20px 0 0 20px;
+}
+
+.errors {
+  width: 50%;
+  margin-left: 25%;
+  background: rgba(255,255,255,0.6);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+  color: #B50000;
+}
+
+.login .login-box {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 8px;
+  width: 50%;
+  border-color: #A9A9A9;
+  margin-left: 25%;
+  height: 3.6em;
+}
+
+.login .spacer {
+	height: 13em;
+}
+
+.login #login-input {
+	margin: 0.5em;
+	width: 72%;
+}
+
+#map {
+	height: 50em;
+	width: 100%;
+  z-index: 1;
+}
+
+.select-electorate .spacer {
+	height: 16em;
+}
+
+.select-electorate .form {
+  height: 10em;
+  margin-left: 25%;
+  width: 50%;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 8px;
+  border-color: #A9A9A9;
+}
+
+.select-electorate .form h2 {
+  padding-top: 0.5em;
+  border-bottom: 1px solid #DCDCDC;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.select-electorate .form select {
+  width: 73%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#load {
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("/images/loading.svg") no-repeat center center rgba(0,0,0,0.25);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.map-blocker .text {
+  margin: 12% auto;
+  font-size: 3em;
+  text-align: center;
+}
+
+.map-blocker .text .no-data {
+  display: none;
+}
+
+.map-blocker {
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background: rgba(0,0,0,0.6);
+    color: #FD4A00;
+}
+
+.instruct {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.instruct .text {
+  padding: 0 10px;
+}
+
+.instruct .hover-slug {
+  font-size: large;
+}
+
+.legend {
+    padding: 6px 8px;
+    line-height: 18px;
+    color: #555;
+    width: 75%;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 0.7em;
+    margin-left: 0.7em;
+    opacity: 1;
+}

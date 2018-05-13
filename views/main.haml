@@ -1,0 +1,7 @@
+.container.login
+  = styled_flash
+  .spacer
+  .errors-container
+  %form{method: 'post', action: '/login', class: 'login-box'}
+    %input#login-input{placeholder: "Email Address", name: "email", type: "email", required: true}/
+    %input.button-primary#login-button{type: "submit", value: "Log In"}

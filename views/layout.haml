@@ -1,0 +1,18 @@
+%html
+  %head
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", :type => "text/javascript"}
+    %link{:href => "/stylesheets/normalize.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/skeleton.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/main.css", :rel => "stylesheet"}/
+    %title Walk List
+  %body{class: body_class(body)}
+    #load.hidden
+    .header
+      %a.logo-link{href: '/map'}
+        %img.logo{src: '/images/getup_logo.svg'}
+      - if authorised?
+        .nav-top-right
+          Hi
+          .welcome-message #{user_name} &nbsp;
+          %a#logout.button{href: '/logout'}="Logout"
+    = yield
