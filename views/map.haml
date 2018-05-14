@@ -12,7 +12,6 @@
     .header
       %a{href: "/map", class: "logo-link"}
         %img.logo#logo-image{src: '/images/getup_logo.svg'}
-      - if authorised?
         .electorate-picker
           %form{ :action => "/map", :method => "GET"}
             %select{ :id => "electorate", :name => "electorate" }
