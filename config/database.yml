@@ -1,4 +1,4 @@
-
+begin
 development:
 url: postgresql://localhost/walklist
   adapter: postgresql
@@ -8,3 +8,4 @@ url: postgresql://localhost/walklist
   password:
   host: localhost
   port: 5432
+end
