@@ -22,12 +22,7 @@ module Sinatra
       end
 
       def authorised
-         if authorised?
-           yield
--        else
--          flash[:notice] = "You need to login before you can view that page."
--          redirect "/"
--        end
+yield
       end
     end
 
