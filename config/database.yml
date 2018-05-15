@@ -2,7 +2,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: sample_development
+  database: walklist
   username: postgres
   password:
   host: localhost
