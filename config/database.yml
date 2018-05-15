@@ -1,5 +1,6 @@
 
 development:
+url: postgresql://localhost/walklist
   adapter: postgresql
   encoding: unicode
   database: walklist
