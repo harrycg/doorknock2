@@ -206,35 +206,7 @@ var states = {
   claimed: 'claimed'
 }
 
-var map = makeMap(states, stateColors);
-$('.electorate-picker select').change(function() {
-    var electorateId = $(this).val();
-    if (electorateId !== "") {
-      $('.map-blocker').addClass('hidden')
-      $('#load').removeClass('hidden');
-      $.getJSON('/electorate/' + electorateId + '/meshblocks', function(json) {
-        map.clear();
-        if (json.length = 0) {
-          map.render(301020);
-        } else {
-          $('.no-data').show();
-          $('.map-blocker').removeClass("hidden");
-        }
-        $('#load').addClass('hidden');
-      });
-      $(".instruct").removeClass("hidden");
-    } else {
-      $('.no-data').hide();
-      map.clear();
-      map.showAustralia();
-      $(".instruct").addClass("hidden");
-    }    
-});
 
-$('.electorate-picker select').trigger('change');
-window.onunload = function() {
-  $('.electorate-picker select').val("");
-};
 
 $('.download').click(function() {
   map.blocks.save();
