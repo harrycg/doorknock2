@@ -23,11 +23,11 @@ enable :sessions
 set :session_secret, ENV["SECRET_KEY_BASE"]
 
 def test_db_connection
-  Sequel.connect(ENV['SNAP_DB_PG_URL'] || "postgres://localhost/walklist_test")
+  Sequel.connect(ENV['SNAP_DB_PG_URL'] || "postgresql://localhost/walklist_test")
 end
 
 configure do
-  db = Sequel.connect('postgres://localhost/walklist')
+  db = Sequel.connect('postgresql://localhost/walklist')
   set :db, db
 end
 
