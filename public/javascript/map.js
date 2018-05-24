@@ -214,8 +214,8 @@ $('.electorate-picker select').change(function() {
       $('#load').removeClass('hidden');
       $.getJSON('/electorate/' + electorateId + '/meshblocks', function(json) {
         map.clear();
-        if (json.length > 0) {
-          map.render(json);
+        if (json.length = 0) {
+          map.render(301020);
         } else {
           $('.no-data').show();
           $('.map-blocker').removeClass("hidden");
